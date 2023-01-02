@@ -58,15 +58,15 @@ npm start
 | `id` | `string` | **Required**.
 
 ## Cration Projet frontend  :  le frontend est construit à l'aide de React.
- 
+ - Ajouter produit 
+  ```http
+   /AjouterProduit
+```
   - Afficher produit 
    ```http
    /AfficherProduit
 ```
-  - Ajouter produit
-     ```http
-   /AjouterProduit
-```
+
   - Modifier produit
    
   - Supprimer produit 
