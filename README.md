@@ -13,26 +13,59 @@ npm start
 ```
 
 ## Les outils et technologies utilisés :
-MongoDB
-Express
-Reactjs
-Nodejs
-Tailwind
+ - [MongoDB](https://www.mongodb.com/home)
+ - [Express](https://expressjs.com/)
+ - [Reactjs](https://reactjs.org/)
+  - [Nodejs](https://nodejs.org/en/download/)
+ - [Tailwind](https://tailwindcss.com/)
+
 
 
 ## Cration Projet backend Api : Le backend de l'application est construit à l'aide de Node.js
-  Afficher produit 
+     Afficher produit
+  ```http
+  GET Api/Produits/getProduit
+```
+
   Ajouter produit
+  ```http
+  Post Api/Produits/addProduit
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `name` | `string` | **Required**.
+:------------------------- |
+| `price` | `float` | **Required**.
+:------------------------- |
+| `description` | `string` | **Required**.
+  
   Modifier produit
+   ```http
+  Put Api/Produits/updateProduit/${id}
+```
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `string` | **Required**.
   Supprimer produit 
+ ```http
+  DELETE  Api/Produits/deleteProduit/${id}
+```
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `id` | `string` | **Required**.
+
+#### Get item
+
 ## Cration Projet frontend  :  le frontend est construit à l'aide de React.
  
   Afficher produit 
+
   Ajouter produit
   Modifier produit
   Supprimer produit 
 
-##  Assets
+##  assets
 concernant les Assets de ce projet
 
 Create (Créer) : Pour créer un nouvel enregistrement dans la base de données, vous envoyez généralement une requête HTTP POST au serveur avec les données du nouvel enregistrement. Le serveur insère alors les données dans la base de données et renvoie une réponse au client indiquant le statut de l'opération. 
