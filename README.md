@@ -22,12 +22,12 @@ npm start
 
 
 ## Cration Projet backend Api : Le backend de l'application est construit à l'aide de Node.js
-     Afficher produit
+   #  Afficher produit
   ```http
   GET Api/Produits/getProduit
 ```
 
-  Ajouter produit
+ # Ajouter produit
   ```http
   Post Api/Produits/addProduit
 ```
@@ -35,19 +35,21 @@ npm start
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `name` | `string` | **Required**.
-:------------------------- |
+
 | `price` | `float` | **Required**.
-:------------------------- |
+
 | `description` | `string` | **Required**.
   
-  Modifier produit
+ # Modifier produit
+
    ```http
   Put Api/Produits/updateProduit/${id}
 ```
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `id` | `string` | **Required**.
-  Supprimer produit 
+
+####  Supprimer produit 
  ```http
   DELETE  Api/Produits/deleteProduit/${id}
 ```
@@ -55,15 +57,21 @@ npm start
 | :-------- | :------- | :------------------------- |
 | `id` | `string` | **Required**.
 
-#### Get item
-
 ## Cration Projet frontend  :  le frontend est construit à l'aide de React.
  
-  Afficher produit 
+  - Afficher produit 
+   ```http
+   /AfficherProduit
+```
+  - Ajouter produit
+     ```http
+   /AjouterProduit
+```
+  - Modifier produit
+   
+  - Supprimer produit 
+  
 
-  Ajouter produit
-  Modifier produit
-  Supprimer produit 
 
 ##  assets
 concernant les Assets de ce projet
